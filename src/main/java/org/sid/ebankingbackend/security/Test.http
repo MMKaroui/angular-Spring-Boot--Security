@@ -1,0 +1,21 @@
+GET http://localhost:8086/customers
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImlhdCI6MTcxMjMxNzIxOCwic2NvcGUiOiJVU0VSIn0.fB9e5SIRBPCK9LBlMDthXVn3JApy_jLTkDRvW6ck0rvX0GQc_LNrMCfxYs4WOG0l319KV95M1QCv3u84bswlBQ
+#######
+GET http://localhost:8086/auth/profile
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMjI3MTA3OCwic2NvcGUiOiJBRE1JTiBVU0VSIn0.95d2WqsUH9J233pgmD8OuemxFnMUx4J32fEzx2h09kVSwo4-fGhBoMyU3BTV_8ju-78Ubr5whw-v6Vdg2kf6og
+#######
+POST http://localhost:8085/auth/login
+Content-Type: application/x-www-form-urlencoded
+
+username=user1&password=12345
+
+############
+POST http://localhost:8086/customers
+Content-Type: application/json
+Authorization: Bearer yJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImlhdCI6MTcxMjMxNzIxOCwic2NvcGUiOiJVU0VSIn0.fB9e5SIRBPCK9LBlMDthXVn3JApy_jLTkDRvW6ck0rvX0GQc_LNrMCfxYs4WOG0l319KV95M1QCv3u84bswlBQ
+
+{
+"name": "Yassine", "email":"yassine@gmail.com"
+}
+#######
